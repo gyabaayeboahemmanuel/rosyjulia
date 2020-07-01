@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSYJULIA | OUR FARMS</title>
+    <link rel="stylesheet" href="./myStyles/styles.css">
+    <link rel="icon" href="flavicon.png">
+    <script src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./myStyles/ourfarmstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu" onclick="openNav()" >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="s-logo" ><img src="./images/logo.png" width="200px" height="50px" style="margin-top: 15px;"></div>
+            <center><div class="topnav" id="myTopnav">
+                <a  href="index.html">HOME</a>
+                <a class="active" href="./ourfarms.html">OUR FARMS</a>
+                <a href="product.html">PRODUCTS</a>
+                <a href="gallery.html">FARM GALLERY</a>
+           
+                <a href="about.html" >ABOUT</a>
+                <a class="logo" > <img src="./images/logo.png" alt="RosyjuliaLogo" style="margin-top: 15px;"></a>
+                
+           
+            </div>
+        </center>
+            <div class="sidenav" id="mySidenav">
+                
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a  href="index.html">HOME</a>
+                <a href="./ourfarms.html">OUR FARMS</a>
+                <a href="product.html">PRODUCTS</a>
+                <a href="gallery.html">FARM GALLERY</a>
+           
+                <a href="about.html">ABOUT</a>
+            </div>
+        </header> 
+ <marquee behavior="" direction="" ><h1 style="color:rgb(0, 99, 0)">SEARCH THROUGH OUR FARMS</h1></marquee>
+<section>
+
+    <input type="text" id="mysearch" onkeyup="farmsfilter()" placeholder="Search for farm...">
+    <table id="farmsTable">
+        <tr class="header">
+            <th style="width: 60%;">Farm</th>
+            <th style="width: 60%;">Location</th>
+        </tr>
+        <tr>
+            <td> Wheat Farms</td>
+            <td> Drobo</td>
+        </tr>
+        <tr>
+            <td> Totoise Farms</td>
+            <td> Bolga</td>
+        </tr>
+        <tr>
+            <td> Cassav Farms</td>
+            <td> Sunyani</td>
+        </tr>
+        <tr>
+            <td> Sugar Cane Farms</td>
+            <td> Serkwa</td>
+        </tr>
+        <tr>
+            <td> Maize Farms</td>
+            <td> Sunyani</td>
+        </tr>
+        <tr>
+            <td> Pepper Farms</td>
+            <td> Serkwa</td>
+        </tr>
+        <tr>
+            <td> Turkey Farms</td>
+            <td> Berekum</td>
+        </tr>
+        <tr>
+            <td> Guinue Fowl Farms</td>
+            <td> Bolga</td>
+        </tr>
+        <tr>
+            <td> Snail Farms</td>
+            <td> Sunyani</td>
+        </tr>
+        <tr>
+            <td> Duck Farms</td>
+            <td> Serkwa</td>
+        </tr>
+        <tr>
+            <td> Cattle Farms</td>
+            <td> Drobo</td>
+        </tr>
+        <tr>
+            <td> Ostrich Farms</td>
+            <td> Berekum</td>
+        </tr>
+        <tr>
+            <td> Fish Farms</td>
+            <td> Bolga</td>
+        </tr>
+        <tr>
+            <td> Goat Farms</td>
+            <td> Sunyani</td>
+        </tr>
+        <tr>
+            <td> Sheep Farms</td>
+            <td> Serkwa</td>
+        </tr>
+        <tr>
+            <td> Chicken Farms</td>
+            <td> Berekum</td>
+        </tr>
+        <tr>
+            <td> Zebra Farms</td>
+            <td> Bolga</td>
+        </tr>
+        <tr>
+            <td> Bee Farms</td>
+            <td> Sunyani</td>
+        </tr>
+        <tr>
+            <td> Yam Farms</td>
+            <td> Bolga</td>
+        </tr>
+        <tr>
+            <td> Rice Farms</td>
+            <td> Sunyani</td>
+        </tr>
+        <tr>
+            <td> Onion Farms</td>
+            <td> Serkwa</td>
+        </tr>
+        <tr>
+            <td> Cocoa Farms</td>
+            <td> Sunyani</td>
+        </tr>
+        <tr>
+            <td> Pig Farms</td>
+            <td> Serkwa</td>
+        </tr>
+        <tr>
+            <td> Bat Farms</td>
+            <td> Serkwa</td>
+        </tr>
+        <tr>
+            <td> Snake Farms</td>
+            <td> Berekum</td>
+        </tr>
+        <tr>
+            <td> Totoise Farms</td>
+            <td> Bolga</td>
+        </tr>
+        <tr>
+            <td> Lizard Farms</td>
+            <td> Sunyani</td>
+        </tr>
+        <tr>
+            <td> Rabbit Farms</td>
+            <td> Serkwa</td>
+        </tr>
+        <tr>
+            <td> Maize Farms</td>
+            <td> Sunyani</td>
+        </tr>
+        <tr>
+            <td> Peper Farms</td>
+            <td> Serkwa</td>
+        </tr>
+    </table>
+</section>
+<h1 style="color:rgb(0, 99, 0)" id="ceter1" >SEARCH FARMS LOCATION ON GOOGLE MAP</h1>
+    <div class="googleMap">
+        <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Accra+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="400" frameborder="0"></iframe> <a href='https://add-map.com/'><br></a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=aa2a840205095935827e6d32f6888e21d541cfde'></script>
+    </div>
+    <footer>
+        <p>Follow us</p>   
+     <div class="follow">
+         <a href="https://www.instagram.com/geky94"><img src="./images/social_media/instagram-new.png" height="50px" width="50px"  alt="instagram"></a>
+         <a href=""><img src="./images/social_media/facebook-new.png"  height="50px" width="50px" alt="facebook"></a>
+         <a href=""><img src="./images/social_media/twitter.png" height="50px" width="50px"  alt="twitter"></a>
+         <a href="https://www.albemart.com/rosyjulia"><img src="./images/social_media/albemart.png" height="50px" width="50px"  alt="albemart"></a>
+     </div>
+     <div>Developed by GYABAA YEBOAH EMMANUEL(GEKY)</div>
+     <div class="copyright">Copyright  &copy; 2020</div>
+ </footer> 
+</body>    
+</html>
