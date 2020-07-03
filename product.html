@@ -47,169 +47,195 @@
         <img src="./images/products_images/agriculture-berries-berry-blackberry-302577.jpg" alt="Blackberry" style="width:100%">
         <h1>BLACKBERRY</h1>
         <p class="price">GHȼ10.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-        <p><button>Add to Cart</button></p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button><div id="paypal-button-container"></div>
+          <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+          <script>
+            paypal.Buttons({
+                style: {
+                    shape: 'pill',
+                    color: 'silver',
+                    layout: 'vertical',
+                    label: 'buynow',
+                    
+                },
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: '1'
+                            }
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                    });
+                }
+            }).render('#paypal-button-container');
+          </script></button></p>
     </div>
     
     <div class="card">
         <img src="./images/products_images/banana-tree-802783.jpg" alt="banana" style="width:100%">
         <h1>PLANTAIN/ BANANA</h1>
         <p class="price">GHȼ15.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="card">
-        <img src="./images/products_images/brown-eggs-in-nest-128885.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/brown-eggs-in-nest-128885.jpg" alt="Farm produce" style="width:100%">
         <h1>EGGS</h1>
         <p class="price">GHȼ16.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="card">
-        <img src="./images/products_images/chickens-on-traditional-free-range-6441.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/chickens-on-traditional-free-range-6441.jpg" alt="Farm produce" style="width:100%">
         <h1> CHICKENS</h1>
         <p class="price">GHȼ19.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="card">
-        <img src="./images/products_images/agriculture-blur-close-up-focus-533342.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/agriculture-blur-close-up-focus-533342.jpg" alt="Farm produce" style="width:100%">
         <h1>WHITE GALIC</h1>
         <p class="price">GHȼ5.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
     </div>
      
     <div class="card">
-        <img src="./images/products_images/food-red-agriculture-green-39479.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/food-red-agriculture-green-39479.jpg" alt="Farm produce" style="width:100%">
         <h1>GREEN PEPER</h1>
         <p class="price">GHȼ7.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
     </div>
     
     <div class="card">
-      <img src="./images/products_images/healthy-nature-garden-tomatoes-965740.jpg" alt="Denim Jeans" style="width:100%">
+      <img src="./images/products_images/healthy-nature-garden-tomatoes-965740.jpg" alt="Farm produce" style="width:100%">
       <h1>HEALTHY TOMATOES</h1>
       <p class="price">GHȼ9.00</p>
-      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
       <p><button>Add to Cart</button></p>
     </div>
 </div>
 
 <div class="column">
       <div class="card">
-        <img src="./images/products_images/markus-spiske-vrbZVyX2k4I-unsplash.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/markus-spiske-vrbZVyX2k4I-unsplash.jpg" alt="Farm produce" style="width:100%">
         <h1>ONIONS</h1>
         <p class="price">GHȼ12.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
     
       <div class="card">
-        <img src="./images/products_images/orange-carrots-on-table-143133.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/orange-carrots-on-table-143133.jpg" alt="Farm produce" style="width:100%">
         <h1>ORANGE CARROTS</h1>
         <p class="price">GHȼ10.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
     
       <div class="card">
-        <img src="./images/products_images/orange-tomato-161512.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/orange-tomato-161512.jpg" alt="Farm produce" style="width:100%">
         <h1>ORANGE TOMATO</h1>
         <p class="price">GHȼ11.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
     
       <div class="card">
-        <img src="./images/products_images/tomatoes-carrots-and-radish-on-the-top-of-the-table-196643.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/tomatoes-carrots-and-radish-on-the-top-of-the-table-196643.jpg" alt="Farm produce" style="width:100%">
         <h1>CARROTS RADISH</h1>
         <p class="price">GHȼ3.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
     
      <div class="card">
-        <img src="./images/products_images/yellow-round-vegetables-139394.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/yellow-round-vegetables-139394.jpg" alt="Farm produce" style="width:100%">
         <h1>GARDEN EGGS</h1>
         <p class="price">GHȼ7.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
      
       <div class="card">
-        <img src="./images/products_images/food-red-agriculture-green-39479.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/food-red-agriculture-green-39479.jpg" alt="Farm produce" style="width:100%">
         <h1>Tailored Jeans</h1>
         <p class="price">GHȼ5.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
     
     <div class="card">
-      <img src="./images/person-holding-brown-stones-775707.jpg" alt="Denim Jeans" style="width:100%">
+      <img src="./images/person-holding-brown-stones-775707.jpg" alt="Farm produce" style="width:100%">
       <h1>BROWN STONES</h1>
       <p class="price">GHȼ19.00</p>
-      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
       <p><button>Add to Cart</button></p>
     </div>
 </div>
 <div class="column">
     <div class="card">
-        <img src="./images/products_images/chickens-on-traditional-free-range-6441.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/chickens-on-traditional-free-range-6441.jpg" alt="Farm produce" style="width:100%">
         <h1> CHICKENS</h1>
         <p class="price">GHȼ30.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
     
     <div class="card">
-        <img src="./images/products_images/agriculture-blur-close-up-focus-533342.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/agriculture-blur-close-up-focus-533342.jpg" alt="Farm produce" style="width:100%">
         <h1>GALIC</h1>
         <p class="price">GHȼ19.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
      
       <div class="card">
-        <img src="./images/products_images/food-red-agriculture-green-39479.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/food-red-agriculture-green-39479.jpg" alt="Farm produce" style="width:100%">
         <h1>GREEN PEPER</h1>
         <p class="price">GHȼ40.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
     
     <div class="card">
-      <img src="./images/products_images/healthy-nature-garden-tomatoes-965740.jpg" alt="Denim Jeans" style="width:100%">
+      <img src="./images/products_images/healthy-nature-garden-tomatoes-965740.jpg" alt="Farm produce" style="width:100%">
       <h1>HEALTHY TOMATOES</h1>
       <p class="price">GHȼ35.00</p>
-      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
       <p><button>Add to Cart</button></p>
     </div>
       <div class="card">
-        <img src="./images/products_images/markus-spiske-vrbZVyX2k4I-unsplash.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/markus-spiske-vrbZVyX2k4I-unsplash.jpg" alt="Farm produce" style="width:100%">
         <h1>ONIONS</h1>
         <p class="price">GHȼ19.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
     
       <div class="card">
-        <img src="./images/products_images/orange-carrots-on-table-143133.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/orange-carrots-on-table-143133.jpg" alt="Farm produce" style="width:100%">
         <h1>ORANGE CARROTS</h1>
         <p class="price">GHȼ24.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
     
       <div class="card">
-        <img src="./images/products_images/orange-tomato-161512.jpg" alt="Denim Jeans" style="width:100%">
+        <img src="./images/products_images/orange-tomato-161512.jpg" alt="Farm produce" style="width:100%">
         <h1>ORANGE TOMATO</h1>
         <p class="price">GHȼ17.00</p>
-        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p>Some text about the farm produce. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
         <p><button>Add to Cart</button></p>
       </div>
   </div>
